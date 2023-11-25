@@ -29,7 +29,7 @@ func (app *Config) validateBody(c *gin.Context, data any) error {
 }
 
 func (app *Config) writeJSON(c *gin.Context, status int, data any) {
-	c.JSON(status, jsonResponse{Status: status, Message: "success", Data: data})
+	c.JSON(status, jsonResponse{Status: status, Message: "success.", Data: data})
 }
 
 func (app *Config) errorJSON(c *gin.Context, err error, status ...int) {
